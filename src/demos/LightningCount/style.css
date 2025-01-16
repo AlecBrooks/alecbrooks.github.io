@@ -1,0 +1,340 @@
+/* Basic Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #2c2c2c;
+    color: #f4f4f4;
+}
+
+/* Dashboard Grid Layout */
+#dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* Header Styling */
+header {
+    grid-column: 1 / -1;
+    background-color: #3D7190;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Title Container */
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bolt-icon {
+    fill: #f4f4f4;
+    transition: fill 0.3s;
+}
+
+body.dark-mode .bolt-icon {
+    fill: #fddb3a; /* Yellow for dark mode */
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Theme Toggle Button */
+#themeToggle {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+body.dark-mode #themeToggle {
+    color: #fddb3a;
+}
+
+/* History Log - Full Height in Column 1 */
+.history-sidebar {
+    grid-row: 2 / 5;
+    grid-column: 1 / 2;
+    background-color: #ffffff;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 80vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .history-sidebar {
+    background-color: #3a3a3a;
+    color: #f4f4f4;
+}
+
+/* History Header - Title and Trash Button */
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.history-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.trash-button {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.trash-button:hover {
+    background-color: #c0392b;
+}
+
+/* History List */
+.history-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+body.dark-mode .history-list li {
+    border-bottom: 1px solid #666;
+}
+
+/* Stats Section (Column 2, Row 1) */
+.stats-container {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .stats-container {
+    background-color: #3a3a3a;
+    color: #f4f4f4;
+}
+
+/* Stats Value Styling */
+.stat-box p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Win-Loss-Push Box (Column 3, Row 1) */
+.win-loss-push-box {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.win-loss-push-box h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.win-loss-push-box p {
+    font-size: 1.5em; /* Match the font size of the bet stats */
+    margin: 0;
+    font-weight: bold;
+}
+
+body.dark-mode .win-loss-push-box {
+    background-color: #3a3a3a;
+    color: #f4f4f4;
+}
+
+/* Running Count Box (Column 4, Row 1) */
+.running-count-box {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    background-color: #f4f6f9; /* Default color in light mode */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .running-count-box {
+    background-color: #2c2c2c; /* Default color in dark mode */
+    color: #f4f4f4;
+}
+
+/* Running Count Value Styling */
+.running-count-value {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* Metrics Container (Column 2, Row 2) */
+.metrics-container {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .metrics-container {
+    background-color: #3a3a3a;
+    color: #f4f4f4;
+}
+
+/* Metric Value Styling */
+.metric-box p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Input Box (Column 3, Row 2) */
+.input-container {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .input-container {
+    background-color: #3a3a3a;
+    color: #f4f4f4;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: inherit;
+    background-color: inherit;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode input[type="text"] {
+    border-color: #666;
+}
+
+/* Enter Hand Title Styling */
+.input-container h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* File Management Box (Column 4, Row 2) */
+.file-management-box {
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .file-management-box {
+    background-color: #3a3a3a;
+    color: #f4f4f4;
+}
+
+/* Save and Load Button Styling */
+.future-button {
+    background-color: #3D7190;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.future-button:hover {
+    background-color: #2C5A6E;
+}
+
+body.dark-mode .future-button {
+    background-color: #6AA6D6;
+    color: #333333;
+}
+
+body.dark-mode .future-button:hover {
+    background-color: #508BB5;
+}
+
+/* Average Bet by Count (Column 2 to 4, Row 3) */
+.average-bet {
+    grid-row: 4 / 5;
+    grid-column: 2 / 5;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-height: 80vh; /* Limit the height to prevent overflow */
+    overflow-y: auto;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .average-bet {
+    background-color: #3a3a3a;
+    color: #f4f4f4;
+}
+
+canvas {
+    height: 100px; /* Set a fixed height to prevent indefinite growth */
+}

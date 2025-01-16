@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightning Count</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script> 
+    <script src="js/history.js" defer></script>
+    <script src="js/ThemeToggle.js" defer></script>
+    <script src="js/stats.js" defer></script>
+    <script src="js/count.js" defer></script>
+    <script src="js/files.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/audit.js" defer></script>
+</head>
+<body>
+    <div id="dashboard">
+        <header>
+            <div class="title-container">
+                <svg class="bolt-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M11 21h-1l2-8H7l7-9h1l-2 8h5z"></path>
+                </svg>
+                <h1>Lightning Count</h1>
+            </div>
+            <button id="themeToggle">🌙</button> <!-- Theme toggle button -->
+        </header>
+
+        <!-- History Log (Column 1, Spanning All Rows) -->
+        <aside class="history-sidebar">
+            <div class="history-header">
+                <h2>History Log</h2>
+                <button id="trashButton" class="trash-button">🗑️ Clear History</button>
+            </div>
+            <ul id="historyLog" class="history-list"></ul>
+        </aside>
+
+        <!-- Stats (Column 2, Row 1) -->
+        <section class="stats-container">
+            <div class="stat-box">
+                <h3>Max Bet</h3>
+                <p id="maxBet">$0.00</p>
+            </div>
+            <div class="stat-box">
+                <h3>Min Bet</h3>
+                <p id="minBet">$0.00</p>
+            </div>
+            <div class="stat-box">
+                <h3>Avg Bet</h3>
+                <p id="avgBet">$0.00</p>
+            </div>
+        </section>
+
+        <!-- Win-Loss-Push Box (Column 3, Row 1) -->
+        <section class="win-loss-push-box">
+            <h3>Win-Loss-Push</h3>
+            <p id="winLossPushText">0% | 0% | 0%</p>
+        </section>
+
+        <!-- Running Count (Column 4, Row 1) -->
+        <section class="running-count-box">
+            <h3>Running Count</h3>
+            <p><span id="runningCount" class="running-count-value">0</span></p>
+        </section>
+
+        <!-- Hands and Decks Metrics (Column 2, Row 2) -->
+        <section class="metrics-container">
+            <div class="metric-box">
+                <h3>Hands</h3>
+                <p id="handsCount">0</p>
+            </div>
+            <div class="metric-box">
+                <h3>Decks</h3>
+                <p id="decksCount">0</p>
+            </div>
+        </section>
+
+        <!-- Input Box (Column 3, Row 2) -->
+        <div class="input-container">
+            <h2>Enter Hand</h2>
+            <input type="text" id="handInput" placeholder="Enter hand (e.g., 15.1230*)">
+        </div>
+
+        <!-- File Management Box (Column 4, Row 2) -->
+        <section class="file-management-box">
+            <h3>File Management</h3>
+            <button id="saveButton" class="future-button">Save</button>
+            <button id="loadButton" class="future-button">Load</button>
+            <button id="auditButton" class="future-button">Audit</button> <!-- New Audit button -->
+        </section>
+
+        <!-- Average Bet by Count (Column 2 to 4, Row 3) -->
+        <div class="chart-card average-bet">
+            <h2>Average Bet by Count</h2>
+            <canvas id="averageBetChart"></canvas>
+        </div>
+    </div>
+</body>
+</html>
