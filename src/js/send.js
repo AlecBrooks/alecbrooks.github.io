@@ -10,7 +10,7 @@ function sendForm(event) {
     return;
   }
 
-  var webhookUrl = 'https://discord.com/api/webhooks/1121026381283864657/GTJ1LIgD34Q5OPwRtPgrfUcOGkfEGq6N5AO4QAPI8dib1t-Hg0FSteUyzKBQPGnc9B2A';
+  var webhookUrl = 'https://discordapp.com/api/webhooks/1343657787351367741/H38WyXw7cZF5Ed318tGy-3HyA6pHefbbN5H2S_9URMcwIA58GSDFxZ3p1tePZfujXyK6';
   var timestamp = new Date().toISOString();
   var formattedMessage = `\n\n${message}`;
 
