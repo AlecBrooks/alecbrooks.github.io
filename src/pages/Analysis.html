@@ -3,21 +3,63 @@
         <h1 class="page-title">Data Analysis Projects</h1>
         <ul>
             <li class="post">
-                <h2>Ecoblitz Weather Analysis Fall 2024</h2>
-                <p>1/30/2024</p>
-                <p><a href="/src/demos/Ecoblitz/Ecoblitz.html">Ecoblitz Weather Analysis Fall 2024</a></p>
+                <h2>🌿 Ecoblitz-Analysis: Investigating Climate & Biodiversity 🌿</h2>
+                <p>2/24/2025</p>
+                <p>From agriculture and infrastructure to energy and water supplies, climate plays a crucial role in societal functionality and health. As climate change leads to increasingly volatile weather patterns, understanding its effects on biodiversity becomes more critical. This project utilized multiple datasets, including weather data and flower phenology data. The weather dataset was constructed using two local sources: a snowpack dataset from a station approximately 9 miles from the flower survey area, provided by the California Department of Water Resources through the California Data Exchange Center (CDEC), and a temperature dataset from the National Weather Service (NWS) station at the Reno Airport, about 4 miles from the survey area. The phenology dataset was gathered from TMCC’s Ecoblitz events, where faculty and students recorded plant observations using the iNaturalist app. This study focused on identifying factors influencing blooming patterns in Nevada and analyzing how climate variability impacts plant life.</p>
+                <p>By integrating these data sources, this study explored how climate variability influenced local biodiversity, particularly plant phenology.</p>
+                <h3>Data Processing</h3>
+                <p>Data cleaning and statistical analysis were performed using R.</p>
+                <h3>Results & Findings</h3>
+                <p>A detailed report summarizing the findings of this analysis can be accessed below:</p>
+                <p><a href="/src/demos/Ecoblitz/Ecoblitz.html" target="_blank"><strong>View Full Report</strong></a></p>
+                <h3>Accessing the Project</h3>
+                <p>If you're interested in exploring the data or reviewing the source code, visit the project's GitHub repository:</p>
+                <p><a href="https://github.com/AlecBrooks/Ecoblitz-Analysis" target="_blank"><strong>Ecoblitz-Analysis on GitHub</strong></a></p>
+                <h3>Acknowledgments</h3>
+                <p>This research was conducted as part of a <strong>research grant</strong> and was mentored by <strong>Eriko Sakamura</strong>. My research partner for this project was <strong>Seth Miller</strong>.</p>
+                <p>Additional support provided by:</p>
+                <ul>
+                    <li><strong>National Institute of General Medical Sciences</strong></li>
+                    <li><strong>National Aeronautics and Space Administration (NASA) 🚀</strong></li>
+                </ul>
             </li>
             <li class="post">
-                <h2>Palmer Penguins Review: a Predictive Model Approach</h2>
+                <h2>♟️ The Islands Chess Experiment: Investigating Chess & Memory ♟️</h2>
+                <p>12/15/2024</p>
+            
+                <p>Chess has long been associated with intelligence, but does playing chess actively enhance cognitive abilities? This study explored the relationship between regular chess playing and memory improvement using simulated data from <strong>The Islands</strong> platform. Over the course of a simulated fall semester, students were divided into two groups: a participant group that played chess daily and a control group that did not. Both groups completed daily memory tests, allowing the analysis of the impact of chess engagement on cognitive performance.</p>
+            
+                <p>Although the participant group demonstrated greater improvement in memory scores than the control group, the difference lacked strong statistical significance, likely due to the small sample size. However, linear regression analysis revealed that the duration of study participation and the number of chess wins were significant predictors of memory scores, accounting for a notable portion of the observed variation. These findings suggest a potential link between playing chess and memory enhancement, though further research with larger, real-world populations is needed to confirm these effects.</p>
+            
+                <h3>Data & Analysis</h3>
+                <p>The dataset was generated from The Islands simulation, where students engaged in controlled experiments. Key variables included memory test scores, and chess game outcomes. Statistical analyses, including a Welch Two Sample t-test and linear regression, were performed in R to determine patterns in memory improvement.</p>
+            
+                <h3>Results & Findings</h3>
+                <p>A full report detailing the methodology, statistical analysis, and conclusions can be accessed below:</p>
+                <p><a href="/src/demos/ChessMemory/ChessMemory.html" target="_blank"><strong>View Full Report</strong></a></p>
+            
+                <h3>Video Summary</h3>
+                <p>For a visual overview of the study and its key findings, watch the summary video here:</p>
+                <p><a href="https://drive.google.com/file/d/11ZL4uS7UDOURJymiFGqKpzgITkk-jKfZ/view?usp=sharing" target="_blank"><strong>Watch Video</strong></a></p>
+            
+                <h3>Accessing the Dataset</h3>
+                <p>The dataset used in this study is publicly available for further exploration:</p>
+                <p><a href="https://www.kaggle.com/datasets/alecbrooks/the-islands-chess-experiment" target="_blank"><strong>The Islands Chess Experiment on Kaggle</strong></a></p>
+            
+                <h3>Acknowledgments</h3>
+                <p>This study was conducted using data from <strong>The Islands</strong> platform, developed by the University of Sydney. Special thanks to <strong>The Islands research team</strong> for providing access to this simulated population.</p>
+            </li>
+            <li class="post">
+                <h2>🐧 Palmer Penguins Review: a Predictive Model Approach 🐧</h2>
                 <p>8/1/2024</p>
                 <h3>Abstract</h3>
                 <p>The Palmer Penguin dataset is widely used in academic settings due to its variety and scope, making it a good tool for exploring different types of statistical analysis. The dataset includes seven different metrics that can be analyzed for various insights. This report focuses on the correlation between penguin Body Mass and Flipper Length. This analysis shows that Flipper Length can be used as a reliable predictor of penguin Body Mass, using the formula 𝑦 = 50.153𝑥 − 5872.1 within acceptable levels of accuracy. However, these findings are preliminary, and further analysis could reveal an additional wealth of other connections within the dataset.</p>
                 <h3>Data Set</h3>
-                <p>In this report, we will be examining the "palmer-penguins" dataset, provided by Allison Horst, a data scientist and artist on GitHub. The data was collected from 07 - 09 by Dr. Kristen Gorman, while working with the US Long Term Ecological Research Network. This dataset includes three categorical variables. species, island, and sex, along with four numerical variables. culmen_length_mm, culmen_depth_mm, flipper_length_mm, and body_mass_g. Together, these variables form the palmer-penguins dataset, which is largely used in training and classroom settings due to its simplicity and variety of variable types.<a href="/src/images/demos/PP/flip to mass.png" target="_blank"><img class="img-post" src="/src/images/demos/PP/flip to mass.png" alt="PP flip to mass"></a></p>
+                <p>In this report, we will be examining the "palmer-penguins" dataset, provided by Allison Horst, a data scientist and artist on GitHub. The data was collected from 07 - 09 by Dr. Kristen Gorman, while working with the US Long Term Ecological Research Network. This dataset includes three categorical variables. species, island, and sex, along with four numerical variables. culmen_length_mm, culmen_depth_mm, flipper_length_mm, and body_mass_g. Together, these variables form the palmer-penguins dataset, which is largely used in training and classroom settings due to its simplicity and variety of variable types.<a href="/src/images/demos/PP/pp.png" target="_blank"><img class="img-post" src="/src/images/demos/PP/pp.png" alt="PP flip to mass"></a></p>
                 <h3>Analysis</h3>
                 <p>If we plot Flipper Length as our independent variable and Body Mass as our dependent variable, we can see a consistent pattern. The R² score of 0.76 indicates that approximately 76% of the variance in Body Mass can be explained by Flipper Length. After we plot the residuals, we find a relatively low Mean Residual of 0.06.</p>
                 <h3>Conclusion</h3>
-                <p>Further, The Standard Error is 393.34. Considering that the range of the dependent variable (Body Mass) is 6300, this Standard Error is relatively low, representing about 6.24% of the Body Mass range. This indicates that the model is reasonably accurate, making Flipper Length an acceptable predictor of Body Mass. This project serves as a good case study for the importance of using methods such as plotting and analyzing residuals to verify findings. a full report of this analysis can be seen on my blog <a href="https://blog.abrooks.dev/Palmer%20Penguins%20Review">Here</a>.</p>
+                <p>Further, The Standard Error is 393.34. Considering that the range of the dependent variable (Body Mass) is 6300, this Standard Error is relatively low, representing about 6.24% of the Body Mass range. This indicates that the model is reasonably accurate, making Flipper Length an acceptable predictor of Body Mass. This project serves as a good case study for the importance of using methods such as plotting and analyzing residuals to verify findings. a full report of this analysis can be seen <a href="https://blog.abrooks.dev/Palmer%20Penguins%20Review">Here</a>.</p>
             </li>
         </ul>
 </div>
