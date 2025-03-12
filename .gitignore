@@ -1,0 +1,7 @@
+.vscode/
+.sublime/
+*.vs
+.vs/
+sharedData/
+.sublime/
+.DS_Sture
