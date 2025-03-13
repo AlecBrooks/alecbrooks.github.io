@@ -1,0 +1,306 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/AlecB/Repos/alecbrooks.github.io/index.html",
+			"settings":
+			{
+				"buffer_size": 4552,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"left_delete",
+					null,
+					"AQAAAJ8EAAAAAAAAnwQAAAAAAAABAAAAPg",
+					"AQAAAAAAAAABAAAAoAQAAAAAAACgBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": ">"
+					},
+					"AQAAAJ8EAAAAAAAAoAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnwQAAAAAAACfBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAALwHAAAAAAAAvQcAAAAAAAAAAAAAvQcAAAAAAADDBwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvAcAAAAAAAC8BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"paste",
+					null,
+					"AQAAAMMHAAAAAAAALQgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwwcAAAAAAADDBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					2,
+					"left_delete",
+					null,
+					"AgAAAL0HAAAAAAAAvQcAAAAAAABwAAAACQkJCQkJPGEgaHJlZj0iamF2YXNjcmlwdDp2b2lkKDApOyIgb25jbGljaz0iQ29sbGFwc2VNZW51KCk7IFBhZ2VzKCcvc3JjL3BhZ2VzL0NvbnRhY3RNZS5odG1sJyk7Ij5Db250YWN0IG1lPC9hPrwHAAAAAAAAvAcAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAALQgAAAAAAAC9BwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"livereload en",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/AlecB/Repos/alecbrooks.github.io"
+	],
+	"file_history":
+	[
+		"/C/Users/AlecB/Repos/alecbrooks.github.io/.sublime/MySite.sublime-project",
+		"/C/Users/AlecB/Repos/CPP/.sublime/New Text Document.txt",
+		"/C/Users/AlecB/Repos/CPP/.sublime/.sublime-project",
+		"/C/Users/AlecB/Repos/UNLVcassAnalysis/scripts/main.py",
+		"/C/Users/AlecB/AppData/Roaming/Sublime Text/Packages/User/Universal_Terminus.sublime-build",
+		"/C/Users/AlecB/Repos/UNLVcassAnalysis/.gitignore",
+		"/C/Users/AlecB/Repos/UNLVcassAnalysis/venv/Lib/site-packages/simple_term_menu-1.6.6.dist-info/REQUESTED",
+		"/C/Users/AlecB/Desktop/test.cpp",
+		"/C/Users/AlecB/Desktop/send photos to Chen of the work pro.txt",
+		"/C/Users/AlecB/Desktop/New Text Document (2).txt",
+		"/C/Users/AlecB/Desktop/New Text Document.txt",
+		"/C/Users/AlecB/Desktop/s.json",
+		"/C/Users/AlecB/Desktop/shit.json.txt",
+		"/C/Users/AlecB/Repos/UNLVcassAnalysis/conf/data.conf"
+	],
+	"find":
+	{
+		"height": 45.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/AlecB/Repos/alecbrooks.github.io/index.html",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1979,
+								1981
+							]
+						],
+						"settings":
+						{
+							"lsp_uri": "file:///C:/Users/AlecB/Repos/alecbrooks.github.io/index.html",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 45.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Universal_Terminus.sublime-build",
+	"project": "MySite.sublime-project",
+	"replace":
+	{
+		"height": 86.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"scripts\\main.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 499.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\AlecB\\Repos\\Template_Repo\\.sublime\\TEMPLATE.sublime-project"
+			]
+		],
+		"width": 378.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 191.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
