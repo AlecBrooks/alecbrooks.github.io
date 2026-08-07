@@ -502,10 +502,17 @@ nav a.nav-active {
   margin: 0;
 }
 
-/* Retro terminal window (fastfetch-style) */
+/* Retro terminal window (fastfetch-style, Gruvbox Light) */
 .terminal-window {
+  --gb-bg: #fbf1c7;
+  --gb-bg1: #ebdbb2;
+  --gb-fg: #3c3836;
+  --gb-gray: #7c6f64;
+  --gb-blue: #076678;
+  --gb-green: #79740e;
+  --gb-orange: #af3a03;
   padding: 0;
-  background-color: #14161c;
+  background-color: var(--gb-bg);
   overflow: hidden;
 }
 
@@ -514,8 +521,8 @@ nav a.nav-active {
   align-items: center;
   gap: 7px;
   padding: 8px 12px;
-  background-color: #1f2229;
-  border-bottom: 1px solid #2c303a;
+  background-color: var(--gb-bg1);
+  border-bottom: 1px solid #d5c4a1;
 }
 
 .term-dot {
@@ -525,9 +532,9 @@ nav a.nav-active {
   display: inline-block;
 }
 
-.term-dot-red { background-color: #ff5f56; }
-.term-dot-yellow { background-color: #ffbd2e; }
-.term-dot-green { background-color: #27c93f; }
+.term-dot-red { background-color: #cc241d; }
+.term-dot-yellow { background-color: #d79921; }
+.term-dot-green { background-color: #98971a; }
 
 .term-titlebar-label {
   margin-left: auto;
@@ -535,13 +542,13 @@ nav a.nav-active {
   transform: translateX(-16px);
   font-family: var(--font-mono);
   font-size: 12px;
-  color: #7a8290;
+  color: var(--gb-gray);
 }
 
 .term-body {
   font-family: var(--font-mono);
   font-size: 13px;
-  color: #e4e6eb;
+  color: var(--gb-fg);
   padding: 16px;
 }
 
@@ -550,17 +557,17 @@ nav a.nav-active {
 }
 
 .term-prompt {
-  color: #6fd58c;
-  font-weight: 500;
+  color: var(--gb-green);
+  font-weight: 700;
 }
 
 .term-tilde {
-  color: var(--accent);
+  color: var(--gb-blue);
   margin-right: 6px;
 }
 
 .term-cursor {
-  color: #e4e6eb;
+  color: var(--gb-fg);
   animation: blink 1.1s steps(1) infinite;
 }
 
@@ -572,10 +579,11 @@ nav a.nav-active {
 }
 
 .ascii-logo {
-  color: var(--accent);
+  color: var(--gb-blue);
   line-height: 1.15;
-  font-size: 12px;
+  font-size: 13px;
   white-space: pre;
+  align-self: flex-start;
 }
 
 .fastfetch-info {
@@ -586,24 +594,35 @@ nav a.nav-active {
   font-size: 13px;
 }
 
+.terminal-window .fastfetch-header {
+  color: var(--gb-orange);
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.terminal-window .fastfetch-rule {
+  color: var(--gb-gray);
+  margin-bottom: 6px;
+}
+
 .fastfetch-info dt {
-  color: var(--accent);
+  color: var(--gb-blue);
   font-weight: 700;
   text-transform: lowercase;
 }
 
 .fastfetch-info dd {
-  color: #e4e6eb;
+  color: var(--gb-fg);
   line-height: 1.5;
 }
 
 .fastfetch-info a {
-  color: var(--accent);
+  color: var(--gb-blue);
   text-decoration: underline dashed;
 }
 
 .fastfetch-info a:hover {
-  color: #ffffff;
+  color: var(--gb-orange);
 }
 
 /* h-card (About page) */

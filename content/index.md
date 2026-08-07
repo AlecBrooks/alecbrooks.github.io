@@ -22,29 +22,33 @@ permalink: /
     <div class="term-body">
       <p class="term-line"><span class="term-prompt">alec@web</span><span class="term-tilde">:~$</span> fastfetch</p>
       <div class="fastfetch">
-        <pre class="ascii-logo">┌────────────┐
-│         ██ │
-│      ██ ██ │
-│   ██ ██ ██ │
-│   ██ ██ ██ │
-└────────────┘</pre>
-        <dl class="fastfetch-info">
-          <dt>os</dt><dd>reno, nv</dd>
-          <dt>role</dt><dd>data science student &amp; casino surveillance agent</dd>
-          <dt>skills</dt><dd>sql, python, r, vba, c++, tableau, power-bi</dd>
-          <dt>experience</dt>
-          <dd>
-            surveillance agent @ peppermill (2018&ndash;present)<br>
-            data science intern @ unlv (2025)<br>
-            co-author, published research (2026)
-          </dd>
-          <dt>education</dt>
-          <dd>
-            data science, tmcc (2023&ndash;present)<br>
-            google data analytics cert (2023)
-          </dd>
-          <dt>resume</dt><dd><a href="/files/resume.pdf" target="_blank">resume.pdf</a> &check;</dd>
-        </dl>
+        <pre class="ascii-logo">╭──────────╮
+│          │
+│      ██  │
+│   ██ ██  │
+│██ ██ ██  │
+╰──────────╯</pre>
+        <div class="fastfetch-info-col">
+          <p class="fastfetch-header">alec@web</p>
+          <p class="fastfetch-rule">-----------------</p>
+          <dl class="fastfetch-info">
+            <dt>os</dt><dd>reno, nv</dd>
+            <dt>role</dt><dd>data science student &amp; casino surveillance agent</dd>
+            <dt>skills</dt><dd>sql, python, r, vba, c++, tableau, power-bi</dd>
+            <dt>experience</dt>
+            <dd>
+              surveillance agent @ peppermill (2018&ndash;present)<br>
+              data science intern @ unlv (2025)<br>
+              co-author, published research (2026)
+            </dd>
+            <dt>education</dt>
+            <dd>
+              data science, tmcc (2023&ndash;present)<br>
+              google data analytics cert (2023)
+            </dd>
+            <dt>resume</dt><dd><a href="/files/resume.pdf" target="_blank">resume.pdf</a> &check;</dd>
+          </dl>
+        </div>
       </div>
       <p class="term-line"><span class="term-prompt">alec@web</span><span class="term-tilde">:~$</span><span class="term-cursor">_</span></p>
     </div>
