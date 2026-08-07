@@ -1,10 +1,10 @@
 export default {
-  title: "Alec Brooks",
+  title: "Alec",
   url: "https://abrooks.dev",
-  description: "Alec Brooks — data analysis, programming projects, and writing.",
+  description: "Alec — data analysis, programming projects, and writing.",
   author: {
-    name: "Alec Brooks",
-    email: "alec@abrooks.dev",
+    name: "Alec",
+    email: "contact@abrooks.dev",
     github: "https://github.com/AlecBrooks",
   },
 };

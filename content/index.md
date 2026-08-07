@@ -13,15 +13,37 @@ permalink: /
     {% include "partials/social-links.njk" %}
   </div>
   <div class="post terminal-card">
-    <p class="terminal-title">whoami</p>
-    <hr class="terminal-rule">
-    <dl>
-      <dt>name</dt><dd>alec brooks</dd>
-      <dt>based</dt><dd>reno, nv</dd>
-      <dt>role</dt><dd>data analyst / surveillance</dd>
-      <dt>stack</dt><dd>r &middot; sql &middot; vba &middot; lua</dd>
-      <dt>site</dt><dd>eleventy + indieweb</dd>
-    </dl>
+    <div class="term-block">
+      <p class="term-cmd">whoami</p>
+      <p class="term-output">alec &mdash; data science student &amp; casino surveillance agent</p>
+    </div>
+    <div class="term-block">
+      <p class="term-cmd">cat location.txt</p>
+      <p class="term-output">reno, nv</p>
+    </div>
+    <div class="term-block">
+      <p class="term-cmd">ls skills/</p>
+      <p class="term-output">sql&nbsp;&nbsp;python&nbsp;&nbsp;r&nbsp;&nbsp;vba&nbsp;&nbsp;c++&nbsp;&nbsp;tableau&nbsp;&nbsp;power-bi</p>
+    </div>
+    <div class="term-block">
+      <p class="term-cmd">cat experience.txt</p>
+      <p class="term-output">
+        surveillance agent, peppermill resort (2018&ndash;present)<br>
+        data science intern, unlv air-quality research (2025)<br>
+        co-author, published ecology research (2026)
+      </p>
+    </div>
+    <div class="term-block">
+      <p class="term-cmd">cat education.txt</p>
+      <p class="term-output">
+        data science, tmcc (2023&ndash;present)<br>
+        google data analytics certificate (2023)
+      </p>
+    </div>
+    <div class="term-block">
+      <p class="term-cmd">curl -O resume.pdf</p>
+      <p class="term-output">saved &rarr; <a href="/files/resume.pdf" target="_blank">resume.pdf</a> &check;</p>
+    </div>
   </div>
 </div>
 <ul>

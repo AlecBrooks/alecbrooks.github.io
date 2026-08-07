@@ -442,6 +442,17 @@ nav a.nav-active {
   content: "> ";
 }
 
+.log-entry {
+  cursor: pointer;
+}
+
+.log-entry:hover {
+  transform: translate(-3px, -3px) scale(1.02);
+  box-shadow: 10px 10px 0 var(--accent-hover);
+  background-color: #ffffff;
+  border-color: var(--accent-hover);
+}
+
 /* About page two-column layout */
 .about-grid {
   display: grid;
@@ -461,7 +472,7 @@ nav a.nav-active {
   margin: 0;
 }
 
-/* Retro "whoami" terminal card */
+/* Retro terminal-session card */
 .terminal-card {
   font-family: var(--font-mono);
   font-size: 13px;
@@ -470,28 +481,40 @@ nav a.nav-active {
 .terminal-card .terminal-title {
   color: var(--accent-dark);
   font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.terminal-card .terminal-rule {
-  border: none;
-  border-top: 1px dashed var(--accent);
   margin-bottom: 10px;
 }
 
-.terminal-card dl {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 6px 14px;
+.term-block {
+  margin-bottom: 14px;
 }
 
-.terminal-card dt {
+.term-block:last-child {
+  margin-bottom: 0;
+}
+
+.term-cmd {
   color: var(--accent-dark);
   font-weight: 500;
 }
 
-.terminal-card dd {
+.term-cmd::before {
+  content: "$ ";
+  color: var(--text-muted);
+}
+
+.term-output {
   color: var(--text);
+  padding-left: 14px;
+  line-height: 1.6;
+}
+
+.term-output a {
+  color: var(--accent-dark);
+  text-decoration: underline dashed;
+}
+
+.term-output a:hover {
+  color: var(--accent-hover);
 }
 
 /* h-card (About page) */
