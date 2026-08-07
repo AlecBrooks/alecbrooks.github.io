@@ -622,17 +622,8 @@ nav a.nav-active {
   color: var(--accent-hover);
 }
 
-/* h-card (About page) */
-.h-card {
-  text-align: center;
-}
-
-.h-card .about-heading {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.5em;
-  color: var(--accent-dark);
-  margin-bottom: 10px;
+.window-body {
+  padding: 18px;
 }
 
 /* Webmentions */

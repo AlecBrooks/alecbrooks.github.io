@@ -4,13 +4,21 @@ title: Home
 permalink: /
 ---
 <div class="about-grid">
-  <div class="post">
-    {% include "partials/h-card.njk" %}
-    <p>Hello! Thanks for stopping by.</p>
-    <p>My name is Alec. I'm currently studying data science, but my interest in computers and technology goes much deeper than just analyzing datasets. I love research, programming, building things, setting up servers, networking, ricing out Hyprland, and generally figuring out how things work beneath the surface. I'm usually working on some project that gives me an excuse to learn something new and potentially useless.</p>
-    <p>I also love working with others, especially when the problem is open-ended and everyone brings different ideas to the table. This site is a place to collect some of my projects and experiments, along with a small blog where I write about research I've been involved in and whatever thoughts, ideas, or questions I happen to be exploring along the way.</p>
-    <p>Thanks for stopping by, and if you have an idea involving data, computers, or technology, don't hesitate to reach out!</p>
-    {% include "partials/social-links.njk" %}
+  <div class="post terminal-window">
+    <div class="term-titlebar">
+      <span class="term-dot term-dot-red"></span>
+      <span class="term-dot term-dot-yellow"></span>
+      <span class="term-dot term-dot-green"></span>
+      <span class="term-titlebar-label">about me</span>
+    </div>
+    <div class="window-body">
+      {% include "partials/h-card.njk" %}
+      <p>Hello! Thanks for stopping by.</p>
+      <p>My name is Alec. I'm currently studying data science, but my interest in computers and technology goes much deeper than just analyzing datasets. I love research, programming, building things, setting up servers, networking, ricing out Hyprland, and generally figuring out how things work beneath the surface. I'm usually working on some project that gives me an excuse to learn something new and potentially useless.</p>
+      <p>I also love working with others, especially when the problem is open-ended and everyone brings different ideas to the table. This site is a place to collect some of my projects and experiments, along with a small blog where I write about research I've been involved in and whatever thoughts, ideas, or questions I happen to be exploring along the way.</p>
+      <p>Thanks for stopping by, and if you have an idea involving data, computers, or technology, don't hesitate to reach out!</p>
+      {% include "partials/social-links.njk" %}
+    </div>
   </div>
   <div class="post terminal-window">
     <div class="term-titlebar">
