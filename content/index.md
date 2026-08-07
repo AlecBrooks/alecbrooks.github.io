@@ -29,15 +29,6 @@ permalink: /
     <div class="term-body">
       <p class="term-line"><span class="term-prompt">alec@web</span><span class="term-tilde">:~$</span> mefetch</p>
       <div class="fastfetch">
-        <div class="logo-wordmark">
-          <pre class="ascii-logo">     /\
-    /  \
-   / /\ \
-  / /__\ \
- / ______ \
-/_/      \_\</pre>
-          <span class="logo-suffix">lec</span>
-        </div>
         <div class="fastfetch-info-col">
           <p class="fastfetch-header">alec@web</p>
           <p class="fastfetch-rule">-----------------</p>

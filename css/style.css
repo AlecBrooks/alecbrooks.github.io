@@ -572,34 +572,6 @@ nav a.nav-active {
   margin: 12px 0 16px 0;
 }
 
-.logo-wordmark {
-  display: flex;
-  align-items: flex-end;
-  flex-shrink: 0;
-  align-self: flex-start;
-}
-
-.ascii-logo {
-  color: var(--accent-dark);
-  font-family: var(--font-mono);
-  line-height: 1;
-  font-size: 28px;
-  white-space: pre;
-}
-
-.post pre.ascii-logo {
-  border: none;
-}
-
-.logo-suffix {
-  color: var(--accent-dark);
-  font-family: var(--font-mono);
-  font-weight: 700;
-  font-size: 16px;
-  margin-left: 2px;
-  margin-bottom: 2px;
-}
-
 .fastfetch-info-col {
   flex: 1 1 0;
   min-width: 0;
