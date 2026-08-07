@@ -575,7 +575,7 @@ nav a.nav-active {
 .ascii-logo {
   color: var(--accent-dark);
   line-height: 1.2;
-  font-size: 6px;
+  font-size: 9px;
   white-space: pre;
   align-self: flex-start;
   flex-shrink: 0;
