@@ -1,4 +1,9 @@
 <footer>
-  <p>{{ metadata.author.email }}<br> built with <a href="https://www.11ty.dev/" style="text-decoration: none; color: inherit;">Eleventy</a></p>
-  <p>&copy; {{ buildYear }} {{ metadata.author.name }}. All rights reserved.</p>
+  <p class="footer-line">{{ metadata.author.email }}</p>
+  <ul class="badges">
+    <li><a href="https://indieweb.org/" target="_blank" rel="noopener">IndieWeb</a></li>
+    <li><a href="https://www.11ty.dev/" target="_blank" rel="noopener">11ty</a></li>
+    <li><a href="{{ metadata.author.github }}/alecbrooks.github.io" target="_blank" rel="noopener">source</a></li>
+  </ul>
+  <p class="footer-line">&copy; {{ buildYear }} {{ metadata.author.name }}</p>
 </footer>

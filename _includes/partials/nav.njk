@@ -1,5 +1,4 @@
 {% set navItems = [
-  { url: "/", label: "Home" },
   { url: "/projects/", label: "Projects" },
   { url: "/blog/", label: "Blog" },
   { url: "/contact/", label: "Contact" }
@@ -7,7 +6,7 @@
 
 <nav class="mobile-container">
   <div class="topnav">
-    <a href="/" class="active">abrooks.dev</a>
+    <a href="/" class="site-prompt"><span class="prompt-user">alec@web</span><span class="prompt-sep">:~$</span><span class="prompt-cursor">_</span></a>
     <div id="NavButtons">
       {% for item in navItems %}
         <a href="{{ item.url }}" onclick="CollapseMenu();"{% if page.url == item.url %} class="nav-active"{% endif %}>{{ item.label }}</a>
@@ -19,6 +18,7 @@
   </div>
 </nav>
 <nav class="desktop-container">
+  <a href="/" class="site-prompt desktop-only"><span class="prompt-user">alec@web</span><span class="prompt-sep">:~$</span><span class="prompt-cursor">_</span></a>
   <ul id="NavButtons">
     {% for item in navItems %}
       <li><a href="{{ item.url }}"{% if page.url == item.url %} class="nav-active"{% endif %}>{{ item.label }}</a></li>
