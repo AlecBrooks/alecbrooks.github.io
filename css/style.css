@@ -167,6 +167,20 @@ footer {
   max-width: 100%;
 }
 
+.post p {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.post p:last-of-type {
+  margin-bottom: 0;
+}
+
+.post ol,
+.post ul:not(.socialLinks):not(.staticCarousel):not(.badges) {
+  margin: 0 0 14px 24px;
+}
+
 .post pre {
   border: 1px solid var(--accent);
 }
