@@ -578,6 +578,12 @@ nav a.nav-active {
   font-size: 6px;
   white-space: pre;
   align-self: flex-start;
+  flex-shrink: 0;
+}
+
+.fastfetch-info-col {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .fastfetch-info {
