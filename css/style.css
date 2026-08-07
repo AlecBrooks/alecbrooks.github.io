@@ -213,6 +213,22 @@ footer {
   color: var(--card-bg);
 }
 
+.badges li.badge-stamp a {
+  padding: 0;
+  border: none;
+  line-height: 0;
+}
+
+.badges li.badge-stamp img {
+  display: block;
+  image-rendering: pixelated;
+}
+
+.badges li.badge-stamp a:hover {
+  background-color: transparent;
+  opacity: 0.8;
+}
+
 /* code-blocks */
 .code code,
 code.code-block {
@@ -522,13 +538,11 @@ nav a.nav-active {
   text-align: center;
 }
 
-.h-card .p-name {
-  display: block;
+.h-card .about-heading {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.5em;
   color: var(--accent-dark);
-  text-decoration: none;
   margin-bottom: 10px;
 }
 
