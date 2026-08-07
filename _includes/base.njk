@@ -28,6 +28,9 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="/js/particles-conf.js"></script>
     <script src="/js/nav.js"></script>
+    {% for script in extraScripts %}
+    <script src="{{ script }}"></script>
+    {% endfor %}
   </div>
 </body>
 </html>
