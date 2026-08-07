@@ -576,7 +576,7 @@ nav a.nav-active {
   color: var(--accent-dark);
   line-height: 0.9;
   font-size: 9px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.167em;
   white-space: pre;
   align-self: flex-start;
   flex-shrink: 0;
