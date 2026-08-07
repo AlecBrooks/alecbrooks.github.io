@@ -12,37 +12,41 @@ permalink: /
     <p>Thanks for stopping by, and if you have an idea involving data, computers, or technology, don't hesitate to reach out!</p>
     {% include "partials/social-links.njk" %}
   </div>
-  <div class="post terminal-card">
-    <div class="term-block">
-      <p class="term-cmd">whoami</p>
-      <p class="term-output">alec &mdash; data science student &amp; casino surveillance agent</p>
+  <div class="post terminal-window">
+    <div class="term-titlebar">
+      <span class="term-dot term-dot-red"></span>
+      <span class="term-dot term-dot-yellow"></span>
+      <span class="term-dot term-dot-green"></span>
+      <span class="term-titlebar-label">alec@web: ~</span>
     </div>
-    <div class="term-block">
-      <p class="term-cmd">cat location.txt</p>
-      <p class="term-output">reno, nv</p>
-    </div>
-    <div class="term-block">
-      <p class="term-cmd">ls skills/</p>
-      <p class="term-output">sql&nbsp;&nbsp;python&nbsp;&nbsp;r&nbsp;&nbsp;vba&nbsp;&nbsp;c++&nbsp;&nbsp;tableau&nbsp;&nbsp;power-bi</p>
-    </div>
-    <div class="term-block">
-      <p class="term-cmd">cat experience.txt</p>
-      <p class="term-output">
-        surveillance agent, peppermill resort (2018&ndash;present)<br>
-        data science intern, unlv air-quality research (2025)<br>
-        co-author, published ecology research (2026)
-      </p>
-    </div>
-    <div class="term-block">
-      <p class="term-cmd">cat education.txt</p>
-      <p class="term-output">
-        data science, tmcc (2023&ndash;present)<br>
-        google data analytics certificate (2023)
-      </p>
-    </div>
-    <div class="term-block">
-      <p class="term-cmd">curl -O resume.pdf</p>
-      <p class="term-output">saved &rarr; <a href="/files/resume.pdf" target="_blank">resume.pdf</a> &check;</p>
+    <div class="term-body">
+      <p class="term-line"><span class="term-prompt">alec@web</span><span class="term-tilde">:~$</span> fastfetch</p>
+      <div class="fastfetch">
+        <pre class="ascii-logo">┌────────────┐
+│         ██ │
+│      ██ ██ │
+│   ██ ██ ██ │
+│   ██ ██ ██ │
+└────────────┘</pre>
+        <dl class="fastfetch-info">
+          <dt>os</dt><dd>reno, nv</dd>
+          <dt>role</dt><dd>data science student &amp; casino surveillance agent</dd>
+          <dt>skills</dt><dd>sql, python, r, vba, c++, tableau, power-bi</dd>
+          <dt>experience</dt>
+          <dd>
+            surveillance agent @ peppermill (2018&ndash;present)<br>
+            data science intern @ unlv (2025)<br>
+            co-author, published research (2026)
+          </dd>
+          <dt>education</dt>
+          <dd>
+            data science, tmcc (2023&ndash;present)<br>
+            google data analytics cert (2023)
+          </dd>
+          <dt>resume</dt><dd><a href="/files/resume.pdf" target="_blank">resume.pdf</a> &check;</dd>
+        </dl>
+      </div>
+      <p class="term-line"><span class="term-prompt">alec@web</span><span class="term-tilde">:~$</span><span class="term-cursor">_</span></p>
     </div>
   </div>
 </div>
