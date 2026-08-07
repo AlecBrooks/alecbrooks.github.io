@@ -2,7 +2,11 @@
 # Project-Specific Files
 # ==============================
 
-#HERE
+# Node / Eleventy
+node_modules/
+_site/
+.cache/
+.env
 
 # ==============================
 # OS-Specific Files

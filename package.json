@@ -1,0 +1,28 @@
+{
+  "name": "alecbrooks.github.io",
+  "version": "1.0.0",
+  "description": "my Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlecBrooks/alecbrooks.github.io.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AlecBrooks/alecbrooks.github.io/issues"
+  },
+  "homepage": "https://github.com/AlecBrooks/alecbrooks.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-fetch": "^5.1.3",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@chrisburnell/eleventy-cache-webmentions": "^2.3.2",
+    "dotenv": "^17.4.2"
+  }
+}

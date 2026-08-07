@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/img/favicon.svg">
+  <link rel="webmention" href="https://webmention.io/abrooks.dev/webmention">
+  <link rel="pingback" href="https://webmention.io/abrooks.dev/xmlrpc">
+  <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+  <title>{% if title %}{{ title }} | {% endif %}{{ metadata.title }}</title>
+  <meta name="description" content="{{ description or metadata.description }}">
+</head>
+<body>
+  <div class="wrapper">
+    <div id="particles-js" class="particles-js"></div>
+    <header>
+      {% include "partials/nav.njk" %}
+    </header>
+    <main id="MyContent">
+      {{ content | safe }}
+    </main>
+    {% include "partials/footer.njk" %}
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/js/particles-conf.js"></script>
+    <script src="/js/nav.js"></script>
+  </div>
+</body>
+</html>

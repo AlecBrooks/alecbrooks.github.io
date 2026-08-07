@@ -1,0 +1,27 @@
+{% set navItems = [
+  { url: "/", label: "Home" },
+  { url: "/projects/", label: "Projects" },
+  { url: "/blog/", label: "Blog" },
+  { url: "/contact/", label: "Contact" }
+] %}
+
+<nav class="mobile-container">
+  <div class="topnav">
+    <a href="/" class="active">abrooks.dev</a>
+    <div id="NavButtons">
+      {% for item in navItems %}
+        <a href="{{ item.url }}" onclick="CollapseMenu();"{% if page.url == item.url %} class="nav-active"{% endif %}>{{ item.label }}</a>
+      {% endfor %}
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="Hamburger()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</nav>
+<nav class="desktop-container">
+  <ul id="NavButtons">
+    {% for item in navItems %}
+      <li><a href="{{ item.url }}"{% if page.url == item.url %} class="nav-active"{% endif %}>{{ item.label }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

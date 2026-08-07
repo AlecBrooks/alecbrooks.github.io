@@ -1,0 +1,31 @@
+{% if webmentions and webmentions.length %}
+<div class="webmentions">
+  {% set likes = webmentions | getWebmentionsByTypes(["like-of", "repost-of"]) %}
+  {% set replies = webmentions | getWebmentionsByTypes(["mention-of", "in-reply-to"]) %}
+
+  {% if likes.length %}
+    <h3>Likes &amp; reposts</h3>
+    <ul>
+      {% for mention in likes %}
+        <li>
+          {% if mention.author.photo %}<img src="{{ mention.author.photo }}" alt="">{% endif %}
+          <a href="{{ mention.author.url }}">{{ mention.author.name or mention.author.url }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if replies.length %}
+    <h3>Replies</h3>
+    <ul>
+      {% for mention in replies %}
+        <li>
+          {% if mention.author.photo %}<img src="{{ mention.author.photo }}" alt="">{% endif %}
+          <a href="{{ mention.author.url }}"><strong>{{ mention.author.name or mention.author.url }}</strong></a>
+          <p>{{ mention | getWebmentionContent | safe }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
+{% endif %}

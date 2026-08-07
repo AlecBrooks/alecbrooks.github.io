@@ -1,0 +1,17 @@
+---
+layout: base.njk
+---
+<h1 class="page-title">{{ title }}</h1>
+<ul>
+  <li class="post h-entry">
+    <span class="p-name" style="display:none">{{ title }}</span>
+    <p class="meta">
+      <time class="dt-published" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+      {% if repo %} &middot; <a href="https://github.com/{{ repo }}" target="_blank" rel="noopener">{{ repo }}</a>{% endif %}
+    </p>
+    <div class="e-content">
+      {{ content | safe }}
+    </div>
+    {% include "partials/webmentions-list.njk" %}
+  </li>
+</ul>
