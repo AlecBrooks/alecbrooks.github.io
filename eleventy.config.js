@@ -8,7 +8,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("demos");
-  eleventyConfig.addPassthroughCopy("files");
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy(".nojekyll");
 
