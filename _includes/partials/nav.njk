@@ -19,7 +19,7 @@
 </nav>
 <nav class="desktop-container">
   <a href="/" class="site-prompt desktop-only"><span class="prompt-user">alec@web</span><span class="prompt-sep">:~$</span><span class="prompt-cursor">_</span></a>
-  <ul id="NavButtons">
+  <ul id="NavButtonsDesktop">
     {% for item in navItems %}
       <li><a href="{{ item.url }}"{% if page.url == item.url %} class="nav-active"{% endif %}>{{ item.label }}</a></li>
     {% endfor %}

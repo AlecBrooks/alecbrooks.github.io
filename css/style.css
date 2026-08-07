@@ -243,12 +243,6 @@ footer {
   opacity: 0.8;
 }
 
-/* code-blocks */
-.code code,
-code.code-block {
-  border: 1px solid var(--accent);
-}
-
 .socialLinks {
   margin: 0 auto;
   margin-top: 15px;
@@ -720,12 +714,6 @@ nav a.nav-active {
   nav a.nav-active::before,
   nav a.nav-active::after {
     color: var(--card-bg);
-  }
-
-  .img-post {
-    width: 45%;
-    padding: 20px;
-    float: left;
   }
 
   .socialLinks {
