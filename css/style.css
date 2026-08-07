@@ -574,17 +574,13 @@ nav a.nav-active {
 
 .ascii-logo {
   color: var(--accent-dark);
-  line-height: 1;
+  line-height: 1.2;
   font-size: 6px;
   white-space: pre;
   align-self: flex-start;
 }
 
 .fastfetch-info {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 4px 14px;
-  align-content: start;
   font-size: 13px;
 }
 
@@ -599,15 +595,15 @@ nav a.nav-active {
   margin-bottom: 6px;
 }
 
-.fastfetch-info dt {
-  color: var(--accent-dark);
-  font-weight: 700;
-  text-transform: lowercase;
+.terminal-window .fastfetch-info p {
+  margin-bottom: 6px;
+  line-height: 1.5;
+  color: var(--text);
 }
 
-.fastfetch-info dd {
-  color: var(--text);
-  line-height: 1.5;
+.fastfetch-info .ff-label {
+  color: var(--accent-dark);
+  font-weight: 700;
 }
 
 .fastfetch-info a {

@@ -55,23 +55,14 @@ permalink: /
         <div class="fastfetch-info-col">
           <p class="fastfetch-header">alec@web</p>
           <p class="fastfetch-rule">-----------------</p>
-          <dl class="fastfetch-info">
-            <dt>os</dt><dd>reno, nv</dd>
-            <dt>role</dt><dd>data science student &amp; casino surveillance agent</dd>
-            <dt>skills</dt><dd>sql, python, r, vba, c++, tableau, power-bi</dd>
-            <dt>experience</dt>
-            <dd>
-              surveillance agent @ peppermill (2018&ndash;present)<br>
-              data science intern @ unlv (2025)<br>
-              co-author, published research (2026)
-            </dd>
-            <dt>education</dt>
-            <dd>
-              data science, tmcc (2023&ndash;present)<br>
-              google data analytics cert (2023)
-            </dd>
-            <dt>resume</dt><dd><a href="/files/resume.pdf" target="_blank">resume.pdf</a> &check;</dd>
-          </dl>
+          <div class="fastfetch-info">
+            <p><span class="ff-label">os</span>: reno, nv</p>
+            <p><span class="ff-label">role</span>: data science student &amp; casino surveillance agent</p>
+            <p><span class="ff-label">skills</span>: sql, python, r, vba, c++, tableau, power-bi</p>
+            <p><span class="ff-label">experience</span>: surveillance agent @ peppermill (2018&ndash;present); data science intern @ unlv (2025); co-author, published research (2026)</p>
+            <p><span class="ff-label">education</span>: data science, tmcc (2023&ndash;present); google data analytics cert (2023)</p>
+            <p><span class="ff-label">resume</span>: <a href="/files/resume.pdf" target="_blank">resume.pdf</a> &check;</p>
+          </div>
         </div>
       </div>
       <p class="term-line"><span class="term-prompt">alec@web</span><span class="term-tilde">:~$</span><span class="term-cursor">_</span></p>
