@@ -22,25 +22,21 @@ permalink: /
     <div class="term-body">
       <p class="term-line"><span class="term-prompt">alec@web</span><span class="term-tilde">:~$</span> fastfetch</p>
       <div class="fastfetch">
-        <pre class="ascii-logo">      ██      
-     ████     
-     ████     
-    ██  ██    
-    ██  ██    
-   ████████   
-   ██    ██   
-  ██      ██  
-  ██      ██  
- ██        ██ 
- ██        ██ 
-██          ██</pre>
+        <pre class="ascii-logo">   ██   
+  ████  
+ ██  ██ 
+ ██  ██ 
+ ██████ 
+ ██  ██ 
+ ██  ██ 
+ ██  ██ </pre>
         <div class="fastfetch-info-col">
           <p class="fastfetch-header">alec@web</p>
           <p class="fastfetch-rule">-----------------</p>
           <div class="fastfetch-info">
             <p><span class="ff-label">location</span>: reno, nv</p>
             <p><span class="ff-label">role</span>: data science student, programmer, researcher</p>
-            <p><span class="ff-label">skills</span>: sql, python, r, vba, c++, tableau, power-bi</p>
+            <p><span class="ff-label">skills</span>: <span class="ff-skills">Python&nbsp;&nbsp;&middot;&nbsp;&nbsp;SQL&nbsp;&nbsp;&middot;&nbsp;&nbsp;R&nbsp;&nbsp;&middot;&nbsp;&nbsp;C++&nbsp;&nbsp;&middot;&nbsp;&nbsp;VBA&nbsp;&nbsp;&middot;&nbsp;&nbsp;Tableau&nbsp;&nbsp;&middot;&nbsp;&nbsp;Power BI</span></p>
             <p><span class="ff-label">projects</span>: {{ githubRepos.length }}</p>
             <p><span class="ff-label">commits</span>: {{ githubStats.commitCount or "n/a" }}</p>
             <p><span class="ff-label">resume</span>: <a href="/files/resume.pdf" target="_blank">resume.pdf</a> &check;</p>
