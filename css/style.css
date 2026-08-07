@@ -572,14 +572,32 @@ nav a.nav-active {
   margin: 12px 0 16px 0;
 }
 
+.logo-wordmark {
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
 .ascii-logo {
   color: var(--accent-dark);
-  line-height: 0.9;
-  font-size: 9px;
-  letter-spacing: 0.167em;
+  font-family: var(--font-mono);
+  line-height: 1;
+  font-size: 28px;
   white-space: pre;
-  align-self: flex-start;
-  flex-shrink: 0;
+}
+
+.post pre.ascii-logo {
+  border: none;
+}
+
+.logo-suffix {
+  color: var(--accent-dark);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 2px;
+  margin-bottom: 2px;
 }
 
 .fastfetch-info-col {
