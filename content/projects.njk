@@ -4,4 +4,16 @@ title: Projects
 permalink: /projects/
 ---
 <h1 class="page-title">Projects</h1>
-<p style="text-align:center">Pulled live from my public GitHub repos — coming shortly.</p>
+<p style="text-align:center">Pulled live from my public GitHub repos — pushing a new one is the only thing I need to do for it to show up here.</p>
+<ul class="project-grid">
+  {% for repo in githubRepos %}
+    <li class="post project-card">
+      <h2><a href="{{ repo.url }}" target="_blank" rel="noopener">{{ repo.name }}</a></h2>
+      {% if repo.language %}<span class="badge">{{ repo.language }}</span>{% endif %}
+      <p>{{ repo.description or "No description provided." }}</p>
+      <p class="meta">Created {{ repo.createdAt | readableDate }} &middot; Updated {{ repo.updatedAt | readableDate }}</p>
+    </li>
+  {% else %}
+    <li class="post">No public repos found (or the GitHub API pull failed at build time).</li>
+  {% endfor %}
+</ul>
