@@ -56,11 +56,11 @@ permalink: /
           <p class="fastfetch-header">alec@web</p>
           <p class="fastfetch-rule">-----------------</p>
           <div class="fastfetch-info">
-            <p><span class="ff-label">os</span>: reno, nv</p>
-            <p><span class="ff-label">role</span>: data science student &amp; casino surveillance agent</p>
+            <p><span class="ff-label">location</span>: reno, nv</p>
+            <p><span class="ff-label">role</span>: data science student, programmer, researcher</p>
             <p><span class="ff-label">skills</span>: sql, python, r, vba, c++, tableau, power-bi</p>
-            <p><span class="ff-label">experience</span>: surveillance agent @ peppermill (2018&ndash;present); data science intern @ unlv (2025); co-author, published research (2026)</p>
-            <p><span class="ff-label">education</span>: data science, tmcc (2023&ndash;present); google data analytics cert (2023)</p>
+            <p><span class="ff-label">projects</span>: {{ githubRepos.length }}</p>
+            <p><span class="ff-label">commits</span>: {{ githubStats.commitCount or "n/a" }}</p>
             <p><span class="ff-label">resume</span>: <a href="/files/resume.pdf" target="_blank">resume.pdf</a> &check;</p>
           </div>
         </div>
