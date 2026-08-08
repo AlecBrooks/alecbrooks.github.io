@@ -15,41 +15,6 @@ async function fetchCommitCount(headers) {
   }
 }
 
-async function fetchStatus(headers) {
-  const query = `query {
-    user(login: "AlecBrooks") {
-      status {
-        emojiHTML
-        message
-        indicatesLimitedAvailability
-      }
-    }
-  }`;
-
-  try {
-    const data = await EleventyFetch("https://api.github.com/graphql", {
-      duration: "1h",
-      type: "json",
-      fetchOptions: {
-        method: "POST",
-        headers: { ...headers, "Content-Type": "application/json" },
-        body: JSON.stringify({ query }),
-      },
-    });
-    const status = data.data?.user?.status;
-    if (!status) return { message: null, emoji: null, busy: false };
-    const emoji = status.emojiHTML ? status.emojiHTML.replace(/<\/?div>/g, "") : null;
-    return {
-      message: status.message,
-      emoji,
-      busy: status.indicatesLimitedAvailability,
-    };
-  } catch (err) {
-    console.warn(`githubStats: status fetch failed (${err.message}), falling back to null.`);
-    return { message: null, emoji: null, busy: false };
-  }
-}
-
 export default async function () {
   const headers = {
     "User-Agent": "abrooks.dev-eleventy-build",
@@ -59,10 +24,7 @@ export default async function () {
     headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
   }
 
-  const [commitCount, status] = await Promise.all([
-    fetchCommitCount(headers),
-    fetchStatus(headers),
-  ]);
+  const commitCount = await fetchCommitCount(headers);
 
-  return { commitCount, status };
+  return { commitCount };
 }
