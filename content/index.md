@@ -41,7 +41,7 @@ permalink: /
             <p><span class="ff-label">commits</span>: {{ githubStats.commitCount or "n/a" }} (github) {{ kaggleStats.datasetCount or "0" }} (kaggle)</p>
             <p><span class="ff-label">github</span>: <a href="{{ metadata.author.github }}" target="_blank" rel="me noopener">@AlecBrooks</a></p>
             <p><span class="ff-label">contact</span>: <a href="https://signal.me/#eu/6eGgaGFq8V3VuUhHheH7GRePYyOUxYUZkBGzFmi0hMEX2DGw8VlIQ50azPVchG_z" target="_blank" rel="noopener">signal</a></p>
-            <p><span class="ff-label">feed</span>: <a href="/feed.xml" target="_blank" rel="noopener">rss</a></p>
+            <p><span class="ff-label">blog feed</span>: <a href="/feed.xml" target="_blank" rel="noopener">rss</a></p>
           </div>
         </div>
       </div>
