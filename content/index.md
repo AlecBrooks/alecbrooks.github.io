@@ -38,7 +38,7 @@ extraScripts:
             <p><span class="ff-label">location</span>: reno, nv</p>
             <p><span class="ff-label">status</span>: <span id="live-status">n/a</span></p>
             <p><span class="ff-label">roles</span>: <span class="ff-skills">data science&nbsp;&nbsp;&middot;&nbsp;&nbsp;programmer&nbsp;&nbsp;&middot;&nbsp;&nbsp;researcher</span></p>
-            <p><span class="ff-label">skills</span>: <span class="ff-skills">Python&nbsp;&nbsp;&middot;&nbsp;&nbsp;SQL&nbsp;&nbsp;&middot;&nbsp;&nbsp;R&nbsp;&nbsp;&middot;&nbsp;&nbsp;C++&nbsp;&nbsp;&middot;&nbsp;&nbsp;VBA&nbsp;&nbsp;&middot;&nbsp;&nbsp;Tableau&nbsp;&nbsp;&middot;&nbsp;&nbsp;Power BI</span></p>
+            <p><span class="ff-label">skills</span>: <span class="ff-skills">Python&nbsp;&nbsp;&middot;&nbsp;&nbsp;SQL&nbsp;&nbsp;&middot;&nbsp;&nbsp;R&nbsp;&nbsp;&middot;&nbsp;&nbsp;VBA&nbsp;&nbsp;&middot;&nbsp;&nbsp;Tableau&nbsp;&nbsp;&middot;&nbsp;&nbsp;Power BI</span></p>
             <p><span class="ff-label">projects</span>: {{ githubRepos.length }} (github) {{ tableauStats.vizCount or "0" }} (tableau)</p>
             <p><span class="ff-label">commits</span>: {{ githubStats.commitCount or "n/a" }} (github) {{ kaggleStats.datasetCount or "0" }} (kaggle)</p>
             <p><span class="ff-label">github</span>: <a href="{{ metadata.author.github }}" target="_blank" rel="me noopener">@AlecBrooks</a></p>
