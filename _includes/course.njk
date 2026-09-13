@@ -1,0 +1,10 @@
+---
+layout: base.njk
+---
+<h1 class="page-title">{{ title }}</h1>
+<div class="post">
+  {% if term %}<p class="meta">{{ term }}</p>{% endif %}
+  <div class="e-content">
+    {{ content | safe }}
+  </div>
+</div>

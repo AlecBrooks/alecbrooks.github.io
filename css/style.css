@@ -163,8 +163,33 @@ footer {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.post img {
+.post video {
+  display: block;
   max-width: 100%;
+  max-height: 420px;
+  width: auto;
+  margin: 12px auto;
+  border: 1px solid var(--accent);
+}
+
+.post img {
+  display: block;
+  max-width: 100%;
+  max-height: 420px;
+  width: auto;
+  margin: 12px auto;
+  border: 1px solid var(--accent);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.post a:has(> img) {
+  display: block;
+  cursor: zoom-in;
+}
+
+.post a:has(> img):hover img {
+  transform: scale(1.02);
+  box-shadow: 6px 6px 0 var(--accent-hover);
 }
 
 .post p {
@@ -183,6 +208,75 @@ footer {
 
 .post pre {
   border: 1px solid var(--accent);
+}
+
+/* Course pages — collapsible project sections */
+.course-section {
+  margin: 0 0 16px;
+  border: 2px solid var(--accent-dark);
+  background-color: var(--bg);
+}
+
+.course-section summary {
+  cursor: pointer;
+  padding: 10px 14px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent-dark);
+  background-color: var(--card-bg);
+  list-style: none;
+}
+
+.course-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.course-section summary::before {
+  content: "▸ ";
+}
+
+.course-section[open] summary::before {
+  content: "▾ ";
+}
+
+.course-section[open] summary {
+  border-bottom: 1px solid var(--accent);
+}
+
+.course-section > p {
+  margin: 0;
+  padding: 10px 14px 0;
+  line-height: 1.6;
+}
+
+.course-section > p:last-child {
+  padding-bottom: 14px;
+}
+
+.course-section > p a {
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+.field-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px;
+}
+
+.field {
+  flex: 1 1 180px;
+  min-height: 44px;
+  padding: 8px 10px;
+  background-color: #ffffff;
+  border: 1px solid var(--accent);
+}
+
+.field-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
 }
 
 /* ==============================

@@ -18,9 +18,12 @@ A full report detailing the methodology, statistical analysis, and conclusions c
 
 ### Video Summary
 
-For a visual overview of the study and its key findings, watch the summary video here:
+For a visual overview of the study and its key findings, watch the summary video below:
 
-[**Watch Video**](https://drive.google.com/file/d/11ZL4uS7UDOURJymiFGqKpzgITkk-jKfZ/view?usp=sharing)
+<video controls preload="metadata">
+  <source src="/demos/Chess_DATA_220/Chess-s-Impact-on-Memory-Final.mp4" type="video/mp4">
+  Your browser doesn't support embedded video. <a href="/demos/Chess_DATA_220/Chess-s-Impact-on-Memory-Final.mp4">Download the video</a> instead.
+</video>
 
 ### Accessing the Dataset
 
