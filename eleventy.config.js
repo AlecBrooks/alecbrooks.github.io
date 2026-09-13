@@ -35,6 +35,12 @@ export default function (eleventyConfig) {
     collectionApi.getFilteredByGlob("content/blog/*.md").sort((a, b) => b.date - a.date)
   );
 
+  eleventyConfig.addCollection("courses", (collectionApi) =>
+    collectionApi
+      .getFilteredByGlob("content/courses/*.md")
+      .sort((a, b) => (b.data.order ?? 0) - (a.data.order ?? 0))
+  );
+
   return {
     dir: {
       input: "content",

@@ -1,0 +1,14 @@
+---
+layout: base.njk
+title: Courses
+permalink: /courses/
+---
+<h1 class="page-title">Courses</h1>
+<ul class="post-list">
+  {% for course in collections.courses %}
+    <li class="post log-entry">
+      {% if course.data.term %}<p class="meta">{{ course.data.term }}</p>{% endif %}
+      <h2><a href="{{ course.url }}">{{ course.data.title }}</a></h2>
+    </li>
+  {% endfor %}
+</ul>
