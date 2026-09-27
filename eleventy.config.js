@@ -10,7 +10,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("demos");
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy(".nojekyll");
-  eleventyConfig.addPassthroughCopy(".well-known");
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
