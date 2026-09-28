@@ -1,4 +1,5 @@
 import EleventyFetch from "@11ty/eleventy-fetch";
+import metadata from "./metadata.js";
 
 export default async function () {
   const url = "https://api.github.com/users/AlecBrooks/repos?per_page=100&sort=created&direction=desc";
@@ -29,7 +30,9 @@ export default async function () {
       fullName: r.full_name,
       description: r.description,
       language: r.language,
-      url: r.html_url,
+      // The list comes from GitHub, but every public repo is mirrored on
+      // git.abrooks.dev under the same name, so link there instead.
+      url: `${metadata.author.git}/${r.name}`,
       homepage: r.homepage,
       createdAt: r.created_at,
       updatedAt: r.pushed_at,

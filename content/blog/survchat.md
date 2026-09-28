@@ -1,7 +1,7 @@
 ---
 title: "🗪 SurvChat: An Overly Complicated Shared Drive Chat Program 🗪"
 date: 2023-06-08
-repo: AlecBrooks/SurvTalk
+repo: SurvTalk
 ---
 Welcome to SurvChat, an excessively convoluted shared drive chat program built using VBA and Excel. SurvChat is a programming project that I undertook just for fun, embracing complexity in a purposeless manner. This blog post will take you through the unique features of SurvChat, including its encryption function, installation process, and overall experience.
 
@@ -46,9 +46,9 @@ Hfre2@QRFX - 03:16 CZ >  Url!
 
 ### Accessing the Project/Installation
 
-To get started with SurvChat, you can download the client and server from my GitHub repository: [SurvTalk on GitHub](https://github.com/AlecBrooks/SurvTalk). The installation process involves storing the server folder on a shared network drive and the client folder locally.
+To get started with SurvChat, you can download the client and server from my Git server: [SurvTalk on git.abrooks.dev](https://git.abrooks.dev/alec/SurvTalk). The installation process involves storing the server folder on a shared network drive and the client folder locally.
 
-1. Download the client and server folders from the GitHub repository.
+1. Download the client and server folders from the repository.
 2. Store the server folder on a shared network drive accessible to all users.
 3. Place the client folder on your local machine.
 4. Edit the Config File within the client folder to specify the location of the server folder.
@@ -58,6 +58,6 @@ To get started with SurvChat, you can download the client and server from my Git
 
 SurvChat, the overly complicated shared drive chat program, presents a unique and ultimately purposeless approach to communication. With its VBA-powered Excel interface, encryption functions, and admin controls, SurvChat delivers a chat experience like no other. Whether you're seeking a bit of programming fun or simply enjoy embracing complexity, SurvChat is a project worth exploring.
 
-To embark on your SurvChat journey, visit the GitHub repository and dive into the deep world of LAN chat goodness that SurvChat can offer. Experience the thrill of secure, convoluted conversations with your friends and colleagues. Happy SurvChatting!
+To embark on your SurvChat journey, visit the repository and dive into the deep world of LAN chat goodness that SurvChat can offer. Experience the thrill of secure, convoluted conversations with your friends and colleagues. Happy SurvChatting!
 
 Note: SurvChat is intended for recreational purposes only and should not be used for sensitive or confidential communication.

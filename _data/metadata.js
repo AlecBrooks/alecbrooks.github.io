@@ -6,5 +6,6 @@ export default {
     name: "Alec",
     email: "contact@abrooks.dev",
     github: "https://github.com/AlecBrooks",
+    git: "https://git.abrooks.dev/alec",
   },
 };
