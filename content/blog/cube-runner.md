@@ -1,7 +1,7 @@
 ---
 title: "📦 Cube Runner: A VBA Game Project 📦"
 date: 2023-06-22
-repo: AlecBrooks/QubeRunner
+repo: QubeRunner
 ---
 Back in late 2020 during my early stages of learning VBA (Visual Basic for Applications), I took on a side project called Cube Runner to further develop my skills. Cube Runner is a game created using VBA and user forms within Microsoft Excel. This project allowed me to apply my knowledge, challenge myself, and showcase my progress. Here is an overview of the project.
 
@@ -17,8 +17,8 @@ Cube Runner represents a significant milestone in my programming journey, emphas
 
 ### Accessing the Project
 
-If you're interested in exploring Cube Runner or reviewing the source code, you can access the project on my GitHub repository: [Cube Runner on GitHub](https://github.com/AlecBrooks/QubeRunner). Simply download the repository and follow the provided instructions to run the game within Microsoft Excel.
+If you're interested in exploring Cube Runner or reviewing the source code, you can access the project on my Git server: [Cube Runner on git.abrooks.dev](https://git.abrooks.dev/alec/QubeRunner). Simply download the repository and follow the provided instructions to run the game within Microsoft Excel.
 
 ### Conclusion
 
-Cube Runner served as a valuable project during my early VBA journey, allowing me to apply the VBA skills I learned and test my progress. While it may not be a particularly complex game, it represents a milestone in my programming journey. Feel free to visit the GitHub repository and experience Cube Runner firsthand!
+Cube Runner served as a valuable project during my early VBA journey, allowing me to apply the VBA skills I learned and test my progress. While it may not be a particularly complex game, it represents a milestone in my programming journey. Feel free to visit the repository and experience Cube Runner firsthand!

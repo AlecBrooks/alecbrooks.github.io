@@ -39,9 +39,9 @@ extraScripts:
             <p><span class="ff-label">status</span>: <span id="live-status">n/a</span></p>
             <p><span class="ff-label">roles</span>: <span class="ff-skills">data science&nbsp;&nbsp;&middot;&nbsp;&nbsp;programmer&nbsp;&nbsp;&middot;&nbsp;&nbsp;researcher</span></p>
             <p><span class="ff-label">skills</span>: <span class="ff-skills">Python&nbsp;&nbsp;&middot;&nbsp;&nbsp;SQL&nbsp;&nbsp;&middot;&nbsp;&nbsp;R&nbsp;&nbsp;&middot;&nbsp;&nbsp;VBA&nbsp;&nbsp;&middot;&nbsp;&nbsp;Tableau&nbsp;&nbsp;&middot;&nbsp;&nbsp;Power BI</span></p>
-            <p><span class="ff-label">projects</span>: {{ githubRepos.length }} (github) {{ tableauStats.vizCount or "0" }} (tableau)</p>
+            <p><span class="ff-label">projects</span>: {{ githubRepos.length }} (git) {{ tableauStats.vizCount or "0" }} (tableau)</p>
             <p><span class="ff-label">commits</span>: {{ githubStats.commitCount or "n/a" }} (github) {{ kaggleStats.datasetCount or "0" }} (kaggle)</p>
-            <p><span class="ff-label">github</span>: <a href="{{ metadata.author.github }}" target="_blank" rel="me noopener">@AlecBrooks</a></p>
+            <p><span class="ff-label">git</span>: <a href="{{ metadata.author.git }}" target="_blank" rel="me noopener">git.abrooks.dev/alec</a></p>
             <p><span class="ff-label">contact</span>: <a href="https://signal.me/#eu/6eGgaGFq8V3VuUhHheH7GRePYyOUxYUZkBGzFmi0hMEX2DGw8VlIQ50azPVchG_z" target="_blank" rel="noopener">signal</a></p>
             <p><span class="ff-label">blog feed</span>: <a href="/feed.xml" target="_blank" rel="noopener">rss</a></p>
           </div>

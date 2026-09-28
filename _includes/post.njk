@@ -7,7 +7,7 @@ layout: base.njk
     <span class="p-name" style="display:none">{{ title }}</span>
     <p class="meta">
       <time class="dt-published" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
-      {% if repo %} &middot; <a href="https://github.com/{{ repo }}" target="_blank" rel="noopener">{{ repo }}</a>{% endif %}
+      {% if repo %} &middot; <a href="{{ metadata.author.git }}/{{ repo }}" target="_blank" rel="noopener">{{ repo }}</a>{% endif %}
     </p>
     <div class="e-content">
       {{ content | safe }}

@@ -1,7 +1,7 @@
 ---
 title: "⚡ Lightning Count: A Card-Counting Dashboard ⚡"
 date: 2024-06-01
-repo: AlecBrooks/LightningCount
+repo: LightningCount
 ---
 Lightning Count is a browser-based blackjack card-counting dashboard I built in 2024 — informed directly by the surveillance side of my day job, where reviewing a player's bet sizing against the count is one of the core tools for spotting advantage play.
 
@@ -17,4 +17,4 @@ Running count tracking, live bet stats (max/min/avg), a win-loss-push ratio read
 
 ### Accessing the Project
 
-Plain HTML/CSS/JS, no build step, no dependencies beyond the Chart.js CDN. Source is on GitHub: [Lightning Count on GitHub](https://github.com/AlecBrooks/LightningCount).
+Plain HTML/CSS/JS, no build step, no dependencies beyond the Chart.js CDN. Source is on my Git server: [Lightning Count on git.abrooks.dev](https://git.abrooks.dev/alec/LightningCount).
