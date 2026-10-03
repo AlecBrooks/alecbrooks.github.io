@@ -187,6 +187,12 @@ footer {
   cursor: zoom-in;
 }
 
+/* Shelnia post: smaller screenshots, left-aligned (click for full size) */
+.post img[src^="/img/demos/Shelnia/"] {
+  max-width: min(100%, 440px);
+  margin: 12px 0;
+}
+
 .post a:has(> img):hover img {
   transform: scale(1.02);
   box-shadow: 6px 6px 0 var(--accent-hover);
