@@ -279,6 +279,21 @@ footer {
   color: var(--text-muted);
 }
 
+.pdf-preview {
+  width: 160px;
+  margin: 0 auto;
+}
+
+.pdf-preview img {
+  width: 100%;
+  margin: 8px 0 0;
+}
+
+.field-text {
+  margin: 6px 0 0;
+  line-height: 1.6;
+}
+
 /* ==============================
    Footer — badge row
    ============================== */
