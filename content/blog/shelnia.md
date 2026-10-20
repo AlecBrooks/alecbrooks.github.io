@@ -18,6 +18,25 @@ There are no passwords and no sign-up forms. The first time you connect with an 
 
 The server only hands the app a key whose signature it actually verified, so offering someone else's public key just gets you a guest session. You can attach more than one key to an account (with a one-time link code), which is a good idea, because there's also no password recovery. A lost key with no spare is a lost account.
 
+### Getting a Key
+
+If you've never made an SSH key, Shelnia will just log you in as a guest. Making one takes a few seconds, with the same command on Linux, macOS and Windows 10+ (in PowerShell). Press Enter at every question:
+
+```
+ssh-keygen -t ed25519
+```
+
+Then run `ssh shelnia.sh` again and you'll be asked to claim a handle. Keep the default filename: `ssh` only offers keys with the standard names unless you tell it otherwise.
+
+If you'd rather use a key just for Shelnia, make one with its own name and point `ssh` at it:
+
+```
+ssh-keygen -t ed25519 -f ~/.ssh/shelnia
+ssh -i ~/.ssh/shelnia -o IdentitiesOnly=yes shelnia.sh
+```
+
+`IdentitiesOnly` is worth it. Without it, `ssh` offers every key you have to whatever server you connect to. GitHub publishes everyone's public keys, so a key you also use there can be matched to your name.
+
 ### What's Inside
 
 Everything is laid out in numbered tabs:
@@ -60,4 +79,4 @@ It's tested end to end with real SSH sessions: a few hundred automated checks th
 
 ### Try It
 
-Shelnia is running on a small test server, currently version 0.1.3. If you have an SSH key, run `ssh shelnia.sh`, claim a handle and say hi in chat.
+Shelnia is running on a small test server, currently version 0.1.3. Run `ssh shelnia.sh` (see *Getting a Key* above if you don't have one), claim a handle and say hi in chat.
